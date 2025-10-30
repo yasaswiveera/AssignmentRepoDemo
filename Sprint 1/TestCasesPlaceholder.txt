@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class TC01_Positive {
+    public TC01_Positive() {
+    }
+
+    public static void main(String[] args) {
+        String patientID = "P1";
+        List<String> prescriptions = new ArrayList();
+        List<String> doseLogs = new ArrayList();
+        String doctorName = "Dr. Smith";
+        String medication = "Amoxicillin";
+        String dosage = "500 mg";
+        prescriptions.add("Rx#1 - " + medication + " - " + dosage + " - prescribed by " + doctorName);
+        System.out.println("Prescription created and sent to patient " + patientID + ".");
+        boolean tookIt = true;
+        String timeTaken = "08:00";
+        String doseTaken = "500 mg";
+        doseLogs.add("Patient " + patientID + " took Rx#1 at " + timeTaken + " (" + doseTaken + ")");
+        System.out.println("Dose log saved: took=" + (tookIt ? "YES" : "NO") + ", time=" + timeTaken + ", dose=" + doseTaken);
+        System.out.println("\n== Dose Log History ==");
+        Iterator var10 = doseLogs.iterator();
+
+        while(var10.hasNext()) {
+            String log = (String)var10.next();
+            System.out.println(log);
+        }
+
+        System.out.println("\nEnd of TC01 Positive Test Case ");
+    }
+}

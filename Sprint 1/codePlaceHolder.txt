@@ -1,0 +1,60 @@
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * MedicationTracker
+ * A simple Java program that stores prescriptions and dose logs
+ * for a patient and prints the results (matches TC01_Positive test).
+ */
+public class MedicationTracker {
+
+    private String patientID;
+    private List<String> prescriptions;
+    private List<String> doseLogs;
+
+    // Constructor
+    public MedicationTracker(String patientID) {
+        this.patientID = patientID;
+        this.prescriptions = new ArrayList<>();
+        this.doseLogs = new ArrayList<>();
+    }
+
+    // Add a prescription
+    public void addPrescription(String medication, String dosage, String doctorName) {
+        String entry = "Rx#1 - " + medication + " - " + dosage + " - prescribed by " + doctorName;
+        prescriptions.add(entry);
+        System.out.println("Prescription created and sent to patient " + patientID + ".");
+    }
+
+    // Log when the patient takes a dose
+    public void logDose(boolean tookIt, String timeTaken, String doseTaken) {
+        String log = "Patient " + patientID + " took Rx#1 at " + timeTaken + " (" + doseTaken + ")";
+        doseLogs.add(log);
+        System.out.println("Dose log saved: took=" + (tookIt ? "YES" : "NO") +
+                           ", time=" + timeTaken + ", dose=" + doseTaken);
+    }
+
+    // Print all dose logs
+    public void printDoseHistory() {
+        System.out.println("\n== Dose Log History ==");
+        for (String log : doseLogs) {
+            System.out.println(log);
+        }
+        System.out.println("\nEnd of TC01 Positive Test Case ");
+    }
+
+    // Main method (for testing)
+    public static void main(String[] args) {
+        // Create tracker for patient P1
+        MedicationTracker tracker = new MedicationTracker("P1");
+
+        // Add prescription
+        tracker.addPrescription("Amoxicillin", "500 mg", "Dr. Smith");
+
+        // Log dose
+        tracker.logDose(true, "08:00", "500 mg");
+
+        // Show dose history
+        tracker.printDoseHistory();
+    }
+}
