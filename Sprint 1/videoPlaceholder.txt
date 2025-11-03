@@ -1,0 +1,12 @@
+Sprint 1 Demonstration Video
+Link: https://drive.google.com/file/d/1VyabUNeNOwI1T5Z7lj2M9kC9t3L_gEyN/view?usp=sharing
+
+Overview:
+The Sprint 1 video shows both positive, boundary, and negative test cases for the Medication Tracker system. 
+The positive test case checks that a doctor can add a prescription and the patient can log a dose correctly, 
+showing that the main features work as expected. The boundary test case checks if the system accepts the earliest 
+valid time, 00:00, when logging a dose, and it passes successfully. The negative test cases include one with an 
+invalid null medication, and another with an empty dosage, both showing that the program handles errors properly by rejecting 
+incorrect inputs. Overall, the video shows that the system works correctly for valid inputs and responds properly to
+invalid ones.
+
