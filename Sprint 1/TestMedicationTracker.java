@@ -1,5 +1,4 @@
 // Name: Vaishnavi Madagiri
-// Date: (put today’s date)
 // Assignment: Sprint 1 - TC01 Positive Test Case
 // Purpose: To test that the doctor can add a prescription and patient can log their dose
 
