@@ -10,7 +10,7 @@ public class TC03_SameMinuteGraceLimit {
         System.out.println();
 
         // preconditions
-        MedicationTracker tracker = new MedicationTracker("P1"); // instantiate medication tracker for patient P1
+        MedicationTrackerSprintTwo tracker = new MedicationTrackerSprintTwo("P1"); // instantiate medication tracker for patient P1
         int prescriptionNumber = 1; // P# 1
         String scheduledTime = "08:00"; // scheduled time
         String currentTime = "08:00"; // actual logged time

@@ -1,13 +1,13 @@
-// Sprint 2 - MedicationTracker.java
+// Sprint 2 - MedicationTrackerSprintTwo.java
 // Group Members: Abhiram Allugubelli, Vaishnavi Madagiri, Pooja Challala,
 // Yasaswi Veera, Bella Lopez, Ahmed Siddiq
 
-public class MedicationTracker {
+public class MedicationTrackerSprintTwo {
     // Represents a single patient in the system
     private String patientId;
 
     // Initializes the tracker with a patient ID
-    public MedicationTracker(String patientId) {
+    public MedicationTrackerSprintTwo(String patientId) {
         this.patientId = patientId;
     }
 

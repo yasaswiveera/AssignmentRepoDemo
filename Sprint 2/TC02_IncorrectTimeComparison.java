@@ -13,7 +13,7 @@ public class TC02_IncorrectTimeComparison {
         System.out.println();
 
         //implementing pre conditions
-        MedicationTracker tracker = new MedicationTracker("P1");
+        MedicationTrackerSprintTwo tracker = new MedicationTrackerSprintTwo("P1");
 
         //inputs
         int prescriptionNumber = 1; // P# 1

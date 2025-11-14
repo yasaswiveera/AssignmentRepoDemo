@@ -14,7 +14,7 @@ public class TC04_MissingScheduledTime {
 
         // creating a medication tracker for one patient
         // using patient ID "P1" for consistency across all test cases
-        MedicationTracker tracker = new MedicationTracker("P1");
+        MedicationTrackerSprintTwo tracker = new MedicationTrackerSprintTwo("P1");
 
         // setting up a prescription with missing scheduled time
         // prescription number is fine, but scheduled time is blank on purpose
