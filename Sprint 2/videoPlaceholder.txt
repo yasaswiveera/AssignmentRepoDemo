@@ -1,0 +1,5 @@
+In this video I’m just walking through all four of my Sprint 2 test cases and showing how they run in the system. 
+I go through the positive case, the two negative ones, and the boundary test, and you can see the system catching 
+the errors and saving the valid entries the way it’s supposed to.
+Here’s the link below:
+https://drive.google.com/file/d/132-JE3-KY4tq9Ark1NEwPLHDNXzvV5hQ/view?usp=sharing
