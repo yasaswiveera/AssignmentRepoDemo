@@ -37,6 +37,6 @@ public class TC02_InvalidPatientID2 {
         System.out.println("patient IDs. This test case shows a missing validation feature.");
         System.out.println();
 
-        System.out.println("End of TC02 – Negative Test Case (Version 2)");
+        System.out.println("End of TC02 – Negative Test Case");
     }
 }
