@@ -1,4 +1,5 @@
 //Pooja Challala
+//This test case sets up a patient, schedule a dose time and verifys that the system correctly marks the dose as "missed" if not logged in.
 
 public class TC01_MissedDoseDetected {
 
