@@ -1,33 +1,29 @@
-// Vaishnavi Madagiri
+//Pooja Challala
+// This test case creates a patient tracker, prescripton and logs a dose at the earlist time of the (00:00).
 
-// testing dose log for earliest valid time (00:00)
 public class TC03_BoundaryTime {
 
     public static void main(String[] args) {
 
-        // starting test case 3
-        System.out.println("TC03 - Boundary Test Case (Earliest Time)");
-        System.out.println("checking if time 00:00 works when logging dose");
-        System.out.println();
+        System.out.println("TC03 – Boundary Test: Earliest Valid Dose Time");
+        System.out.println("Verifying system behavior when logging a dose at 00:00\n");
 
-        // make tracker for patient
+        // Create a medication tracker for the patient
         MedicationTracker tracker = new MedicationTracker("P1");
 
-        // doctor adds prescription first so dose can be logged
-        System.out.println("doctor adds prescription");
+        // Prescription must exist before dose logging
+        System.out.println("Adding prescription for patient...");
         tracker.addPrescription("Amoxicillin", "500 mg", "Dr. Smith");
 
-        // now logging dose at midnight (edge time)
-        System.out.println("patient logs dose at 00:00");
+        // Attempt to log the earliest valid time
+        System.out.println("Attempting to log dose at 00:00...");
         tracker.logDose(true, "00:00", "500 mg");
 
-        // show dose history to confirm the time got saved properly
-        System.out.println("showing dose history after logging:");
+        // Confirm that the time was actually stored
+        System.out.println("\nDose history now contains:");
         tracker.printDoseHistory();
 
-        // expected result message
-        System.out.println("expected: dose should be saved with time = 00:00");
-        System.out.println();
-        System.out.println("End of TC03 Boundary Test Case");
+        // Expected outcome
+        System.out.println("Expected: Dose should be recorded with time: 00:00");
     }
 }
