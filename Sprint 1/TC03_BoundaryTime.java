@@ -1,6 +1,7 @@
-// Vaishnavi Madagiri
+//Vaishnavi Madagiri
+// Testing dose log for earliest valid time (00:00)
 
-// testing dose log for earliest valid time (00:00)
+
 public class TC03_BoundaryTime {
 
     public static void main(String[] args) {
