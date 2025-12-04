@@ -1,0 +1,6 @@
+This video demonstrates the successful execution of four test cases (TC01–TC04) for the NotificationSystem 
+used in our medication reminder program. The tests cover positive, negative, boundary, and invalid input scenarios 
+to validate system behavior. All test cases pass and confirm that reminders are triggered correctly, notifications 
+are blocked when disabled, exact times are handled accurately, and invalid data is properly rejected.
+
+Link: https://www.loom.com/share/1c9f3f057d954dd5bbfd619850fae41e
